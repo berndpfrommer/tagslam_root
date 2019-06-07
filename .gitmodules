@@ -9,3 +9,7 @@
 [submodule "src/apriltag"]
 	path = src/apriltag
 	url = https://github.com/versatran01/apriltag.git
+[submodule "src/flex_sync"]
+	path = src/flex_sync
+	url = https://github.com/daniilidis-group/flex_sync.git
+	branch = master
