@@ -1,0 +1,11 @@
+[submodule "src/tagslam"]
+	path = src/tagslam
+	url = https://github.com/berndpfrommer/tagslam.git
+	branch = master
+[submodule "src/tagslam_test"]
+	path = src/tagslam_test
+	url = https://github.com/berndpfrommer/tagslam_test.git
+	branch = master
+[submodule "src/apriltag"]
+	path = src/apriltag
+	url = https://github.com/versatran01/apriltag.git
