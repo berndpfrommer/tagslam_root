@@ -1,7 +1,7 @@
 # TagSLAM root repository
 
 Use this repository to get a complete ROS/catkin workspace with all
-dependencies for the [TagSLAM project](https://berndpfrommer.github.io/tagslam/).
+dependencies for the [TagSLAM project](https://berndpfrommer.github.io/tagslam_web).
 
 This repository relies heavily on [git submodules](https:www.vogella.com/tutorials/GitSubmodules/article.html).
 
