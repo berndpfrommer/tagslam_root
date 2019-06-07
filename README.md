@@ -20,15 +20,23 @@ TagSLAM's backend is based on GTSAM:
     sudo apt update
     sudo apt install gtsam
 
-Make a new catkin workspace, clone the root repository and
-simultaneously update the submodules:
+Clone the full repo including all submodules, into a a new catkin
+workspace (``tagslam_root``):
 
-    mkdir ~/catkin_ws
-	cd ~/catkin_ws
+	cd ~
     git clone --recursive https://github.com/berndpfrommer/tagslam_root.git
 
 Configure and compile:
 
+    cd ~/tagslam_root
     catkin config -DCMAKE_BUILD_TYPE=Release
     catkin build
 
+## Quick test
+
+Overlay the newly created workspace and run a quick test:
+
+    source ~/tagslam_root/devel/setup.bash
+    roslaunch tagslam tagslam.launch bag:=`rospack find tagslam`/example/example.bag
+
+(the rosnode will not exit, so you have to Ctrl-C out of it)
