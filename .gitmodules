@@ -17,3 +17,6 @@
 	path = src/tagslam_web
 	url = https://github.com/berndpfrommer/tagslam_web.git
 	branch = master
+[submodule "src/tagslam_viz"]
+	path = src/tagslam_viz
+	url = https://github.com/berndpfrommer/tagslam_viz.git
