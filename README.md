@@ -14,11 +14,19 @@ Melodic). On top of it, install the catkin tools:
 
     sudo apt install python-catkin-tools
 
-TagSLAM's backend is based on GTSAM:
+TagSLAM's backend is based on GTSAM, so you will need to add a PPA:
 
     sudo apt-add-repository ppa:bernd-pfrommer/gtsam
     sudo apt update
-    sudo apt install gtsam
+	
+To install GTSAM, first remove the older version that is no longer in
+the PPA:
+
+	sudo apt remove gtsam
+	
+Then install the new GTSAM version:
+
+	sudo apt install libgtsam-unstable4 libgtsam4 libgtsam-dev libgtsam-unstable-dev
 
 Clone the full repo including all submodules, into a a new catkin
 workspace (``tagslam_root``):
