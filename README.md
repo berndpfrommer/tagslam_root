@@ -30,14 +30,40 @@ Now add the official borglab ppa and install GTSAM:
 Clone the full repo including all submodules, into a a new catkin
 workspace (``tagslam_root``):
 
-	cd ~
+    cd ~
     git clone --recursive https://github.com/berndpfrommer/tagslam_root.git
 
+### For Ubuntu 18.04 and later:
 Configure and compile:
 
     cd ~/tagslam_root
     catkin config -DCMAKE_BUILD_TYPE=Release
     catkin build
+
+## For Ubuntu 16.04:
+Ubuntu 16.04 lacks support for C++ standard 17, so you need to install
+a later version of cmake and g++-7 from PPA repositories:
+
+    sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+    sudo apt-get update
+    sudo apt-get install gcc-7 g++-7
+
+Then [upgrade cmake](https://askubuntu.com/questions/952429/is-there-a-good-ppa-for-cmake-backports):
+
+    sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ xenial main'
+    sudp apt-get update
+    sudo apt-get install kitware-archive-keyring
+    sudo apt-key --keyring /etc/apt/trusted.gpg del C1F34CDD40CD72DA
+    sudo apt-get update
+    sudo apt-get install cmake
+
+Direct cmake to use the g++-7 compiler:
+
+    cd ~/tagslam_root
+    catkin config -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=g++-7
+    catkin build
+
+You will get tons of warning messages, but it should compile.
 
 ## Quick test
 
