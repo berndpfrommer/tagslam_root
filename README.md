@@ -18,14 +18,14 @@ TagSLAM's backend is based on GTSAM, so you will need to add a PPA.
 
 If you previously installed GTSAM, you need to first remove the older version:
 
-	sudo apt remove gtsam
+    sudo apt remove gtsam
     sudo add-apt-repository --remove ppa:bernd-pfrommer/gtsam
 
-Now add the new repo and install the new version of GTSAM:
+Now add the official borglab ppa and install GTSAM:
 
-    sudo apt-add-repository ppa:bernd-pfrommer/libgtsam
+    sudo apt-add-repository ppa:borglab/gtsam-release-4.0
     sudo apt update
-	sudo apt install libgtsam-unstable4 libgtsam4 libgtsam-dev libgtsam-unstable-dev
+    sudo apt install libgtsam-dev libgtsam-unstable-dev
 
 Clone the full repo including all submodules, into a a new catkin
 workspace (``tagslam_root``):
