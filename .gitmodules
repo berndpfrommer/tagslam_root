@@ -1,6 +1,6 @@
 [submodule "src/tagslam"]
 	path = src/tagslam
-	url = git@github:com:berndpfrommer/tagslam.git
+	url = git@github.com:berndpfrommer/tagslam.git
 	branch = master
 [submodule "src/tagslam_test"]
 	path = src/tagslam_test
