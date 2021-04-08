@@ -73,3 +73,8 @@ Overlay the newly created workspace and run a quick test:
     roslaunch tagslam tagslam.launch bag:=`rospack find tagslam`/example/example.bag
 
 (the rosnode will not exit, so you have to Ctrl-C out of it)
+
+## License
+
+This software is and any future contributions to it are licensed under
+the [Apache License 2.0](LICENSE).
