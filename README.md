@@ -76,5 +76,5 @@ Overlay the newly created workspace and run a quick test:
 
 ## License
 
-This software is and any future contributions to it are licensed under
+This software and any future contributions to it are licensed under
 the [Apache License 2.0](LICENSE).
