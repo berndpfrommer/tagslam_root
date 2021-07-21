@@ -9,10 +9,12 @@ This repository relies heavily on [git submodules](https:www.vogella.com/tutoria
 
 Since this is ROS package, you will need
 to [install ROS](http://wiki.ros.org/Installation/Ubuntu). This repo
-has been tested on Ubuntu 16.04 (ROS Kinetic) and Ubuntu 18.04 (ROS
-Melodic). On top of it, install the catkin tools:
+has been tested on Ubuntu 16.04 (ROS Kinetic), Ubuntu 18.04 (ROS
+Melodic) and Ubuntu 20.04 (ROS Noetic). In addition to ROS install the
+catkin tools (U16.04 and U18.04):
 
-    sudo apt install python-catkin-tools
+    sudo apt install python-catkin-tools # Ubuntu 16.04 and 18.04
+    sudo apt install python3-catkin-tools python3-osrf-pycommon # Ubuntu 20.04
 
 TagSLAM's backend is based on GTSAM, so you will need to add a PPA.
 
