@@ -53,7 +53,7 @@ a later version of cmake and g++-7 from PPA repositories:
 Then [upgrade cmake](https://askubuntu.com/questions/952429/is-there-a-good-ppa-for-cmake-backports):
 
     sudo apt-add-repository 'deb https://apt.kitware.com/ubuntu/ xenial main'
-    sudp apt-get update
+    sudo apt-get update
     sudo apt-get install kitware-archive-keyring
     sudo apt-key --keyring /etc/apt/trusted.gpg del C1F34CDD40CD72DA
     sudo apt-get update
