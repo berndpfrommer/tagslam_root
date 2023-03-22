@@ -7,13 +7,13 @@ dependencies for the [TagSLAM project](https://berndpfrommer.github.io/tagslam_w
 
 Since this is ROS package, you will need
 to [install ROS](http://wiki.ros.org/Installation/Ubuntu). This repo
-has been tested on Ubuntu 22.04 (ROS noetic). In the past it has also
+has been tested on Ubuntu 20.04 (ROS noetic). In the past it has also
 worked on Ubuntu 18.04 (ROS melodic).
 In addition to ROS you need to install the following tools:
 ```
 sudo apt install python3-vcstool
 sudo apt install python-catkin-tools # Ubuntu 16.04 and 18.04
-sudo apt install python3-catkin-tools python3-osrf-pycommon # Ubuntu 20.04
+sudo apt install python3-catkin-tools python3-osrf-pycommon # Ubuntu >20.04
 ```
 
 TagSLAM's backend is based on GTSAM, so you will need to add a PPA.

@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-20.04
     name: focal/noetic (x86_64)
     container:
-      image: berndpfrommer/focal_noetic
+      image: berndpfrommer/focal_noetic_gtsam
     steps:
       - name: check out github repo
         uses: actions/checkout@v3
