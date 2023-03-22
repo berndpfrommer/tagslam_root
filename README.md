@@ -38,12 +38,11 @@ workspace (``tagslam_root``):
 cd ~
 git clone https://github.com/berndpfrommer/tagslam_root.git
 cd ~/tagslam_root
-vcstool import --recursive < tagslam_root
+vcs import --recursive < tagslam_root.repos
 ```
 
 Configure and compile:
 ```
-cd ~/tagslam_root
 catkin config -DCMAKE_BUILD_TYPE=RelWithDebInfo
 catkin build
 ```
