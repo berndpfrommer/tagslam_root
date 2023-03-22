@@ -3,7 +3,7 @@
 #
 name: build repo
 env:
-  PACKAGE: simple_image_recon
+  PACKAGE: tagslam_root
 on:
  push:
     branches: [ master]
