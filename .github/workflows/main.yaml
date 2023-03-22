@@ -1,0 +1,28 @@
+#
+# continuous integration workflow
+#
+name: build repo
+env:
+  PACKAGE: simple_image_recon
+on:
+ push:
+    branches: [ master]
+ pull_request:
+    branches: [ master]
+ workflow_dispatch:
+    branches: [ master]
+
+jobs:
+  build_focal_noetic:
+    runs-on: ubuntu-20.04
+    name: focal/noetic (x86_64)
+    container:
+      image: berndpfrommer/focal_noetic
+    steps:
+      - name: check out github repo
+        uses: actions/checkout@v3
+        with:
+          path: ${{ env.PACKAGE }}
+          fetch-depth: 0
+      - name: compile from source
+        run: ${{ env.PACKAGE }}/.github/scripts/build_ros1.bash ${{ env.PACKAGE }}

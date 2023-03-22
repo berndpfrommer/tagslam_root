@@ -1,0 +1,17 @@
+repositories:
+  src/tagslam:
+    type: git
+    url: https://github.com/berndpfrommer/tagslam.git
+    version: v2.2
+  src/tagslam_viz:
+    type: git
+    url: https://github.com/berndpfrommer/tagslam_viz.git
+    version: v1.0
+  src/flex_sync:
+    type: git
+    url: https://github.com/daniilidis-group/flex_sync.git
+    version: v1.0
+  src/apriltag:
+    type: git
+    url: https://github.com/versatran01/apriltag.git
+    version: v1.0
